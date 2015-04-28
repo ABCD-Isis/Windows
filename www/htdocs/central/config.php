@@ -1,7 +1,9 @@
-<?php
+ï»¿<?php
 // Open the Central module in a new window for avoiding the use of the browse buttons
 $open_new_window="N";
 $context_menu="Y";
+//Set this variable to Y if you use the EmpWeb module
+$EmpWeb="N";
 
 //USED FOR ALL THE DATE FUNCTIONS. DD=DAYS, MM=MONTH, AA=YEAR. USE / AS SEPARATOR
 $config_date_format="DD/MM/YY";
@@ -69,9 +71,9 @@ $wxisUrl="http://localhost:9090/cgi-bin/$cisis_ver"."wxis.exe";
 
 //ruta hacia el mx
 if ($cisis_ver!="")
-	$mx_path="/ABCD/www/cgi-bin/".$cisis_ver."mx";
+$mx_path="/ABCD/www/cgi-bin/";
 else
-	$mx_path="/ABCD/www/cgi-bin/mx";
+$mx_path="/ABCD/www/cgi-bin/";
 	
 //CISIS PATH
 if ($cisis_ver!="")
@@ -91,8 +93,8 @@ $ext_allowed=array("jpg","gif","png","pdf","doc","docx","xls","xlsx","odt");
 //allow change password
 $change_password="Y";
 
-//Ruta hacia el archivo con la configuración del FCKeditor
-$FCKConfigurationsPath="/".$app_path."/dataentry/fckconfig.js";
+//Ruta hacia el archivo con la configuraci?n del FCKeditor
+$FCKConfigurationsPath="/ABCD/www/htdocs//php/dataentry/fckconfig.js";
 
 //Ruta hacia el FCKEditor
 $FCKEditorPath="/site/bvs-mod/FCKeditor/";
